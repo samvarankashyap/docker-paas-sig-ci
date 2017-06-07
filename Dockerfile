@@ -8,7 +8,7 @@ RUN dnf install -y python-devel
 RUN dnf install -y libffi-devel
 RUN dnf install -y redhat-rpm-config
 RUN dnf install -y openssl-devel
-RUN pip install ansible==2.2.1
-RUN git clone https://github.com/CentOS-PaaS-SIG/paas-sig-ci
+RUN pip install ansible==2.2.0
+RUN git clone https://github.com/samvarankashyap/paas-sig-ci
 WORKDIR "/paas-sig-ci"
 RUN echo "$PWD"
