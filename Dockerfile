@@ -10,7 +10,8 @@ RUN yum install -y git \
                    openssl-devel \ 
                    gcc paramiko PyYAML Jinja2 httplib2 \
                    ansible \
-                   bash-completion
+                   bash-completion \
+                   iptables
                    
 RUN yum groupinstall -y "Development Tools"
 RUN git clone https://github.com/samvarankashyap/paas-sig-ci
