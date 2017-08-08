@@ -1,7 +1,7 @@
 FROM centos:centos7
 MAINTAINER Samvaran Kashyap (srallaba@redhat.com)
+RUN yum install -y epel-release && yum update -y
 RUN yum install -y git \
-                   epel-release \
                    python-pip \
                    libselinux-python \
                    python-devel \
