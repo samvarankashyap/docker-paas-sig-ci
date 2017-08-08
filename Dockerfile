@@ -7,9 +7,11 @@ RUN yum install -y git \
                    python-devel \
                    libffi-devel \
                    redhat-rpm-config \
-                   openssl-devel \                   
+                   openssl-devel \ 
+                   gcc paramiko PyYAML Jinja2 httplib2 \
+                   ansible
+                   
 RUN yum groupinstall -y "Development Tools"
-RUN pip install ansible==2.2.2
 RUN git clone https://github.com/samvarankashyap/paas-sig-ci
 WORKDIR "/paas-sig-ci"
 RUN echo "$PWD"
